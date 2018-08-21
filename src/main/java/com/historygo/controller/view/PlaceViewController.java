@@ -6,8 +6,12 @@ import com.historygo.repository.PlaceRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+
+import java.util.ArrayList;
 
 @Controller
 public class PlaceViewController {
@@ -18,11 +22,9 @@ public class PlaceViewController {
     PlaceRepository placeRepository;
 
 
-    @RequestMapping("/")
-    public String index() {
-        return "index";
-    }
 
+
+    @RequestMapping("/placeDetails")
     public String showPlaceDetails(@RequestParam ("name") String name, Model model){
 
         Places place;
@@ -49,4 +51,46 @@ public class PlaceViewController {
 
         return "placeDetails";
     }
+
+
+
+
+
+    @PostMapping("/deletePlace")
+    public String deletePlace(@RequestParam("name") String name){
+        Places place;
+        place = placeRepository.findByName(name);
+        if (place != null) {
+            placeRepository.delete(place);
+        }
+        return "redirect:/";
+    }
+
+
+    @PostMapping("/addPlace")
+    public String addPlace (@RequestParam("name") String name){
+        Places place = new Places();
+        place.setName(name);
+
+
+        if (place.getName() != null && place.getName() != "")
+            if (placeRepository.findByName(name) == null)
+                placeRepository.save(place);
+
+        return "redirect:/";
+    }
+
+
+    @PostMapping("/listPlaces")
+    public String listPlaces(ModelMap model){
+        ArrayList<Places> places = new ArrayList<>();
+        places = (ArrayList<Places>) placeRepository.findAll();
+        model.addAttribute("places", places);
+
+        return "usersList";
+    }
+
+
+
+
 }

@@ -76,6 +76,10 @@
 </div>
 
 
+<div class="container-fluid container-padding-small color-4 text-center">
+    <h2 class="display-2">Users</h2>
+</div>
+
 <div class="container-fluid  container-padding-big color-3 text-center">
     <form action="userDetails" method="post" onsubmit="return validate('nameValueSearch')">
 
@@ -124,7 +128,7 @@
 </div>
 
 
-<div class="container-fluid container-padding-big color-4 text-center">
+<div class="container-fluid container-padding-big color-3 text-center">
     <form action="delete" method="post" onsubmit="return validate('nameValueDelete')">
         <div class="row">
             <div class="col-sm-8"> <div class="text-danger">  <h4> Delete user from base </h4>  </div></div>
@@ -161,6 +165,9 @@
 </div>
 
 
+<div class="container-fluid container-padding-small color-4 text-center">
+    <h2 class="display-2">Places</h2>
+</div>
 
 </body>
 </html>
