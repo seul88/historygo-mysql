@@ -8,8 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Static content -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/resources/css/style.css">
-    <script type="text/javascript" src="/resources/js/app.js"></script>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
@@ -45,8 +44,22 @@
             padding-top: 30px;
             padding-bottom: 30px;
         }
+
+
+
     </style>
 
+    <script>
+    function validate(id) {
+    var name = document.getElementById(id).value;
+    if (name == '') {
+    alert('Please enter a valid name.');
+    return false;
+    } else {
+    return true;
+    }
+    }
+    </script>
 </head>
 
 <body>
@@ -58,14 +71,14 @@
 
 
 <div class="container-fluid  container-padding-big color-3 text-center">
-    <form action="userDetails" method="post" onsubmit="return validate()">
+    <form action="userDetails" method="post" onsubmit="return validate('nameValueSearch')">
 
         <div class="row">
             <div class="col-sm-8"><h4> Search for user and show account's details</h4></div>
 
             <div class="col-sm-2">
                 <div class="form-group">
-                    <input type="text" class="form-control"  name="name" placeholder="Nickname">
+                    <input type="text" class="form-control"  id="nameValueSearch" name="name" placeholder="Nickname">
                 </div>
             </div>
 
@@ -83,7 +96,7 @@
 
 
 <div class="container-fluid container-padding-big color-4 text-center">
-    <form action="listUsers" method="post">
+    <form action="listUsers" method="post" >
         <div class="row">
             <div class="col-sm-8"> <h4> List all users </h4> </div>
             <div class="col-sm-4 float-left"> <input type="submit" class="btn btn-info" value="Find all"></div>
@@ -93,11 +106,11 @@
 
 
 <div class="container-fluid container-padding-big color-2 text-center">
-    <form action="addUser" method="post">
+    <form action="addUser" method="post" onsubmit="return validate('nameValueAdd')">
         <div class="row">
             <div class="col-sm-8"> <h4> Add user to database </h4> </div>
             <div class="col-sm-2">
-                <input type="text" class="form-control"  name="name" placeholder="Nickname">
+                <input type="text" class="form-control" id="nameValueAdd" name="name" placeholder="Nickname">
             </div>
             <div class="col-sm-2"> <input type="submit" class="btn btn-warning" value="Add"> </div>
         </div>
@@ -106,10 +119,10 @@
 
 
 <div class="container-fluid container-padding-big color-4 text-center">
-    <form action="delete" method="post">
+    <form action="delete" method="post" onsubmit="return validate('nameValueDelete')">
         <div class="row">
             <div class="col-sm-8"> <div class="text-danger">  <h4> Delete user from base </h4>  </div></div>
-            <div class="col-sm-2"> <input name="name" type="text" class="form-control" placeholder="Nickname" > </div>
+            <div class="col-sm-2"> <input name="name"  id="nameValueDelete" type="text" class="form-control" placeholder="Nickname" > </div>
             <div class="col-sm-2">  <input type="submit" class="btn btn-danger" value="Delete"> </div>
         </div>
     </form>
