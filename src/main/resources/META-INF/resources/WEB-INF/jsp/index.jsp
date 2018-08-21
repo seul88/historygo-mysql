@@ -135,9 +135,6 @@
             <div class="col-sm-2">  <input type="submit" class="btn btn-danger" value="Delete"> </div>
         </div>
     </form>
-
-
-
 </div>
 
 
@@ -171,6 +168,34 @@
 
 
 
+<div class="container-fluid  container-padding-big color-2 text-center">
+    <form action="placeDetails" method="post" onsubmit="return validate('nameValuePlaceSearch')">
+        <div class="row">
+            <div class="col-sm-8"><h4> Search for place details</h4></div>
+            <div class="col-sm-2">
+                <div class="form-group">
+                    <input type="text" class="form-control"  id="nameValuePlaceSearch" name="name" placeholder="Name">
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="form-group">
+                    <input type="submit" class="btn btn-primary" value="Search">
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+
+
+<div class="container-fluid container-padding-big color-3 text-center">
+    <form action="listPlaces" method="post" >
+        <div class="row">
+            <div class="col-sm-8"> <h4> List all places </h4> </div>
+            <div class="col-sm-4 float-left"> <input type="submit" class="btn btn-info" value="Find all"></div>
+        </div>
+    </form>
+</div>
 
 
 
@@ -187,29 +212,13 @@
 </div>
 
 
-<div class="container-fluid container-padding-big color-3 text-center">
-    <form action="listPlaces" method="post" >
-        <div class="row">
-            <div class="col-sm-8"> <h4> List all places </h4> </div>
-            <div class="col-sm-4 float-left"> <input type="submit" class="btn btn-info" value="Find all"></div>
-        </div>
-    </form>
-</div>
 
-<div class="container-fluid  container-padding-big color-2 text-center">
-    <form action="placeDetails" method="post" onsubmit="return validate('nameValuePlaceSearch')">
+<div class="container-fluid container-padding-big color-3 text-center">
+    <form action="deletePlace" method="post" onsubmit="return validate('nameValuePlaceDelete')">
         <div class="row">
-            <div class="col-sm-8"><h4> Search for place details</h4></div>
-            <div class="col-sm-2">
-                <div class="form-group">
-                    <input type="text" class="form-control"  id="nameValuePlaceSearch" name="name" placeholder="Name">
-                </div>
-            </div>
-            <div class="col-sm-2">
-                <div class="form-group">
-                    <input type="submit" class="btn btn-primary" value="Search">
-                </div>
-            </div>
+            <div class="col-sm-8"> <div class="text-danger"> <h4>  <b> Delete place from database </b> </h4>   </div> </div>
+            <div class="col-sm-2"> <input name="name"  id="nameValuePlaceDelete" type="text" class="form-control" placeholder="Name" > </div>
+            <div class="col-sm-2">  <input type="submit" class="btn btn-danger" value="Delete"> </div>
         </div>
     </form>
 </div>
