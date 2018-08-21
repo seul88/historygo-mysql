@@ -98,14 +98,13 @@
                 </div>
             </div>
 
-
         </div>
 
     </form>
 </div>
 
 
-<div class="container-fluid container-padding-big color-4 text-center">
+<div class="container-fluid container-padding-big color-2 text-center">
     <form action="listUsers" method="post" >
         <div class="row">
             <div class="col-sm-8"> <h4> List all users </h4> </div>
@@ -115,7 +114,7 @@
 </div>
 
 
-<div class="container-fluid container-padding-big color-2 text-center">
+<div class="container-fluid container-padding-big color-3 text-center">
     <form action="addUser" method="post" onsubmit="return validate('nameValueAdd')">
         <div class="row">
             <div class="col-sm-8"> <h4> Add user to database </h4> </div>
@@ -128,7 +127,7 @@
 </div>
 
 
-<div class="container-fluid container-padding-big color-3 text-center">
+<div class="container-fluid container-padding-big color-2 text-center">
     <form action="delete" method="post" onsubmit="return validate('nameValueDelete')">
         <div class="row">
             <div class="col-sm-8"> <div class="text-danger">  <h4> Delete user from base </h4>  </div></div>
@@ -167,6 +166,52 @@
 
 <div class="container-fluid container-padding-small color-4 text-center">
     <h2 class="display-2">Places</h2>
+</div>
+
+
+
+
+
+
+
+<div class="container-fluid container-padding-big color-2 text-center">
+    <form action="addPlace" method="post" onsubmit="return validate('nameValuePlaceAdd')">
+        <div class="row">
+            <div class="col-sm-8"> <h4> Add place to database </h4> </div>
+            <div class="col-sm-2">
+                <input type="text" class="form-control" id="nameValuePlaceAdd" name="name" placeholder="Name">
+            </div>
+            <div class="col-sm-2"> <input type="submit" class="btn btn-warning" value="Add"> </div>
+        </div>
+    </form>
+</div>
+
+
+<div class="container-fluid container-padding-big color-3 text-center">
+    <form action="listPlaces" method="post" >
+        <div class="row">
+            <div class="col-sm-8"> <h4> List all places </h4> </div>
+            <div class="col-sm-4 float-left"> <input type="submit" class="btn btn-info" value="Find all"></div>
+        </div>
+    </form>
+</div>
+
+<div class="container-fluid  container-padding-big color-2 text-center">
+    <form action="placeDetails" method="post" onsubmit="return validate('nameValuePlaceSearch')">
+        <div class="row">
+            <div class="col-sm-8"><h4> Search for place details</h4></div>
+            <div class="col-sm-2">
+                <div class="form-group">
+                    <input type="text" class="form-control"  id="nameValuePlaceSearch" name="name" placeholder="Name">
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="form-group">
+                    <input type="submit" class="btn btn-primary" value="Search">
+                </div>
+            </div>
+        </div>
+    </form>
 </div>
 
 </body>

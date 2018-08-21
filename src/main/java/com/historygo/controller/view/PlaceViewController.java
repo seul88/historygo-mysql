@@ -87,7 +87,7 @@ public class PlaceViewController {
         places = (ArrayList<Places>) placeRepository.findAll();
         model.addAttribute("places", places);
 
-        return "usersList";
+        return "placesList";
     }
 
 
