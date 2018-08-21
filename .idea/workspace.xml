@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f4a50195-4f58-450a-a662-63a6b7c49c23" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/resources/WEB-INF/jsp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/resources/WEB-INF/jsp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/resources/WEB-INF/jsp/errorMsg.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/resources/WEB-INF/jsp/errorMsg.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -62,7 +62,7 @@
         <counts>
           <entry key="java" value="2221" />
           <entry key="js" value="2" />
-          <entry key="jsp" value="808" />
+          <entry key="jsp" value="880" />
           <entry key="properties" value="10" />
           <entry key="xml" value="7" />
         </counts>
@@ -70,7 +70,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="2221" />
-          <entry key="JSP" value="808" />
+          <entry key="JSP" value="880" />
           <entry key="JavaScript" value="2" />
           <entry key="Properties" value="10" />
           <entry key="XML" value="7" />
@@ -81,7 +81,7 @@
           <entry key="class" value="1" />
           <entry key="java" value="22" />
           <entry key="js" value="2" />
-          <entry key="jsp" value="13" />
+          <entry key="jsp" value="14" />
           <entry key="properties" value="1" />
           <entry key="xml" value="2" />
         </counts>
@@ -90,7 +90,7 @@
         <counts>
           <entry key="CLASS" value="1" />
           <entry key="JAVA" value="22" />
-          <entry key="JSP" value="13" />
+          <entry key="JSP" value="14" />
           <entry key="JavaScript" value="2" />
           <entry key="Properties" value="1" />
           <entry key="XML" value="2" />
@@ -100,11 +100,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/resources/WEB-INF/jsp/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="402">
-              <caret line="220" column="100" selection-start-line="220" selection-start-column="100" selection-end-line="220" selection-end-column="100" />
+            <state relative-caret-position="-476">
+              <caret line="20" column="17" lean-forward="true" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/resources/WEB-INF/jsp/errorMsg.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="39" column="22" lean-forward="true" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
+              <folding>
+                <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h1#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -184,15 +197,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/historygo/model/Places.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="11" selection-start-line="11" selection-end-line="19" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/historygo/controller/rest/PlaceController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="705">
@@ -248,6 +252,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/historygo/controller/view/PlaceViewController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/resources/WEB-INF/jsp/placesList.jsp" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/resources/WEB-INF/jsp/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/resources/META-INF/resources/WEB-INF/jsp/errorMsg.jsp" />
       </list>
     </option>
   </component>
@@ -393,7 +398,7 @@
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534854349121" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534855602647" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -461,12 +466,12 @@
       <updated>1534754119786</updated>
       <workItem from="1534754122372" duration="5234000" />
       <workItem from="1534761998029" duration="6537000" />
-      <workItem from="1534835428704" duration="18503000" />
+      <workItem from="1534835428704" duration="19668000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30274000" />
+    <option name="totallyTimeSpent" value="31439000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
@@ -584,13 +589,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/resources/WEB-INF/jsp/errorMsg.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/historygo/repository/PlaceRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -687,8 +685,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/resources/WEB-INF/jsp/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="220" column="100" selection-start-line="220" selection-start-column="100" selection-end-line="220" selection-end-column="100" />
+        <state relative-caret-position="-476">
+          <caret line="20" column="17" lean-forward="true" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/resources/WEB-INF/jsp/errorMsg.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="39" column="22" lean-forward="true" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h1#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
