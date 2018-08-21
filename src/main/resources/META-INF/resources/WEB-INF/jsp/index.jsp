@@ -53,25 +53,25 @@
 
 <div class="container-fluid container-padding-small color-1 text-center">
     <h1 class="display-2">HistoryGO</h1>
-    <h1><small>Panel administracyjny</small></h1>
+    <h1><small>Administrative panel</small></h1>
 </div>
 
 
 <div class="container-fluid  container-padding-big color-3 text-center">
-    <form action="hello" method="post" onsubmit="return validate()">
+    <form action="userDetails" method="post" onsubmit="return validate()">
 
         <div class="row">
-            <div class="col-sm-8"><h4> Wyszukaj u¿ytkownika i zobacz szczegó³owe dane o koncie </h4></div>
+            <div class="col-sm-8"><h4> Search for user and show account's details</h4></div>
 
             <div class="col-sm-2">
                 <div class="form-group">
-                    <input type="text" class="form-control"  name="name" placeholder="Nickname gracza">
+                    <input type="text" class="form-control"  name="name" placeholder="Nickname">
                 </div>
             </div>
 
             <div class="col-sm-2">
                 <div class="form-group">
-                    <input type="submit" class="btn btn-primary" value="Szukaj">
+                    <input type="submit" class="btn btn-primary" value="Search">
                 </div>
             </div>
 
@@ -85,8 +85,8 @@
 <div class="container-fluid container-padding-big color-4 text-center">
     <form action="listUsers" method="post">
         <div class="row">
-            <div class="col-sm-8"> <h4> Wylistuj wszystkich graczy </h4> </div>
-            <div class="col-sm-4 float-left"> <input type="submit" class="btn btn-info" value="Znajd¼ wszystkich"></div>
+            <div class="col-sm-8"> <h4> List all users </h4> </div>
+            <div class="col-sm-4 float-left"> <input type="submit" class="btn btn-info" value="Find all"></div>
         </div>
     </form>
 </div>
@@ -95,11 +95,11 @@
 <div class="container-fluid container-padding-big color-2 text-center">
     <form action="addUser" method="post">
         <div class="row">
-            <div class="col-sm-8"> <h4> Dodaj u¿ytkownika do bazy </h4> </div>
+            <div class="col-sm-8"> <h4> Add user to database </h4> </div>
             <div class="col-sm-2">
-                <input type="text" class="form-control"  name="name" placeholder="Nickname gracza">
+                <input type="text" class="form-control"  name="name" placeholder="Nickname">
             </div>
-            <div class="col-sm-2"> <input type="submit" class="btn btn-warning" value="Dodaj"> </div>
+            <div class="col-sm-2"> <input type="submit" class="btn btn-warning" value="Add"> </div>
         </div>
     </form>
 </div>
@@ -108,9 +108,9 @@
 <div class="container-fluid container-padding-big color-4 text-center">
     <form action="delete" method="post">
         <div class="row">
-            <div class="col-sm-8"> <div class="text-danger">  <h4> USUÑ U¯YTKOWNIKA Z BAZY </h4>  </div></div>
-            <div class="col-sm-2"> <input name="name" type="text" class="form-control" placeholder="Nickname gracza" > </div>
-            <div class="col-sm-2">  <input type="submit" class="btn btn-danger" value="USUÑ"> </div>
+            <div class="col-sm-8"> <div class="text-danger">  <h4> Delete user from base </h4>  </div></div>
+            <div class="col-sm-2"> <input name="name" type="text" class="form-control" placeholder="Nickname" > </div>
+            <div class="col-sm-2">  <input type="submit" class="btn btn-danger" value="Delete"> </div>
         </div>
     </form>
 
