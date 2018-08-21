@@ -1,4 +1,4 @@
-package com.historygo.controller;
+package com.historygo.controller.rest;
 
 import com.historygo.repository.UserRepository;
 import com.historygo.model.Users;
