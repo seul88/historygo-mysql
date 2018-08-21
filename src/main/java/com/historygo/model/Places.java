@@ -19,7 +19,7 @@ public class Places {
     private int year;
     private int visits;
     private double GPS_N;
-    private double GPS_W;
+    private double GPS_E;
 
 
     public Integer getId() {
@@ -86,11 +86,11 @@ public class Places {
         this.GPS_N = GPS_N;
     }
 
-    public double getGPS_W() {
-        return GPS_W;
+    public double getGPS_E() {
+        return GPS_E;
     }
 
-    public void setGPS_W(double GPS_W) {
-        this.GPS_W = GPS_W;
+    public void setGPS_E(double GPS_W) {
+        this.GPS_E = GPS_W;
     }
 }

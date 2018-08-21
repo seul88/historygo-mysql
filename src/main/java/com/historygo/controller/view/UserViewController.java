@@ -32,7 +32,6 @@ public class UserViewController {
     @PostMapping("/userDetails")
     public String showUserDetails(@RequestParam("name") String name, Model model) {
         Users user;
-        user = userRepository.findByName(name);
 
         try {
             user = userRepository.findByName(name);
