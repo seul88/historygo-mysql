@@ -2,18 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f4a50195-4f58-450a-a662-63a6b7c49c23" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/historygo/controller/view/PlaceViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/historygo/controller/view/PlaceViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/resources/WEB-INF/jsp/error.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/resources/WEB-INF/jsp/errorMsg.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/resources/WEB-INF/jsp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/resources/WEB-INF/jsp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/resources/WEB-INF/jsp/error.jsp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/META-INF/resources/WEB-INF/jsp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/resources/WEB-INF/jsp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/historygo/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/historygo/Application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/historygo/controller/rest/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/historygo/controller/rest/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/historygo/controller/view/UserViewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/historygo/controller/view/UserViewController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/historygo/model/Places.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/historygo/model/Places.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/historygo/model/Users.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/historygo/model/Users.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/historygo/repository/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/historygo/repository/UserRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gs-mysql-data-0.1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/gs-mysql-data-0.1.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gs-mysql-data-0.1.0.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/gs-mysql-data-0.1.0.jar.original" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -73,7 +67,7 @@
         <counts>
           <entry key="java" value="1212" />
           <entry key="js" value="2" />
-          <entry key="jsp" value="428" />
+          <entry key="jsp" value="524" />
           <entry key="properties" value="10" />
           <entry key="xml" value="7" />
         </counts>
@@ -81,7 +75,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="1212" />
-          <entry key="JSP" value="428" />
+          <entry key="JSP" value="524" />
           <entry key="JavaScript" value="2" />
           <entry key="Properties" value="10" />
           <entry key="XML" value="7" />
@@ -90,7 +84,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="java" value="7" />
-          <entry key="js" value="1" />
+          <entry key="js" value="2" />
           <entry key="jsp" value="5" />
           <entry key="xml" value="2" />
         </counts>
@@ -99,7 +93,7 @@
         <counts>
           <entry key="JAVA" value="7" />
           <entry key="JSP" value="5" />
-          <entry key="JavaScript" value="1" />
+          <entry key="JavaScript" value="2" />
           <entry key="XML" value="2" />
         </counts>
       </usages-collector>
@@ -175,8 +169,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/resources/WEB-INF/jsp/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="124" column="76" selection-start-line="124" selection-start-column="76" selection-end-line="124" selection-end-column="76" />
+            <state relative-caret-position="317">
+              <caret line="146" column="42" selection-start-line="146" selection-start-column="42" selection-end-line="146" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="8" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -240,6 +243,7 @@
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/resources/WEB-INF/jsp/usersList.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/historygo/controller/view/UserViewController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/historygo/controller/view/PlaceViewController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/META-INF.resources.WEB-INF.js/app.js" />
         <option value="$PROJECT_DIR$/src/main/resources/static/js/app.js" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/resources/WEB-INF/jsp/index.jsp" />
       </list>
@@ -303,50 +307,6 @@
               <item name="historygo-mysql" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gs-mysql-data" type="b2602c69:ProjectViewProjectNode" />
-              <item name="historygo-mysql" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="historygo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gs-mysql-data" type="b2602c69:ProjectViewProjectNode" />
-              <item name="historygo-mysql" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="historygo" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gs-mysql-data" type="b2602c69:ProjectViewProjectNode" />
-              <item name="historygo-mysql" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="historygo" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="rest" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gs-mysql-data" type="b2602c69:ProjectViewProjectNode" />
-              <item name="historygo-mysql" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="historygo" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gs-mysql-data" type="b2602c69:ProjectViewProjectNode" />
-              <item name="historygo-mysql" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -356,6 +316,14 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="jsp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gs-mysql-data" type="b2602c69:ProjectViewProjectNode" />
+              <item name="historygo-mysql" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -369,15 +337,16 @@
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534843658549" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534845534007" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Erwin\IdeaProjects\gs-accessing-data-mysql-master\historygo-mysql\src\main\resources\META-INF\resources\WEB-INF\jsp\js" />
+      <recent name="C:\Users\Erwin\IdeaProjects\gs-accessing-data-mysql-master\historygo-mysql\src\main\resources\static\js" />
       <recent name="C:\Users\Erwin\IdeaProjects\gs-accessing-data-mysql-master\historygo-mysql\src\main\resources\META-INF\resources\WEB-INF\jsp" />
+      <recent name="C:\Users\Erwin\IdeaProjects\gs-accessing-data-mysql-master\historygo-mysql\src\main\resources\META-INF\resources\WEB-INF\jsp\js" />
       <recent name="C:\Users\Erwin\IdeaProjects\gs-accessing-data-mysql-master\historygo-mysql\src\main\resources\META-INF\resources" />
     </key>
   </component>
@@ -436,12 +405,12 @@
       <updated>1534754119786</updated>
       <workItem from="1534754122372" duration="5234000" />
       <workItem from="1534761998029" duration="6537000" />
-      <workItem from="1534835428704" duration="7971000" />
+      <workItem from="1534835428704" duration="9825000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19742000" />
+    <option name="totallyTimeSpent" value="21596000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
@@ -457,7 +426,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3290993" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.22863741" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -474,7 +443,7 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Maven Projects" order="5" visible="true" weight="0.17394821" />
+      <window_info anchor="right" id="Maven Projects" order="5" visible="true" weight="0.03317152" />
       <window_info anchor="right" id="Database" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
@@ -636,10 +605,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="8" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/resources/WEB-INF/jsp/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="124" column="76" selection-start-line="124" selection-start-column="76" selection-end-line="124" selection-end-column="76" />
+        <state relative-caret-position="317">
+          <caret line="146" column="42" selection-start-line="146" selection-start-column="42" selection-end-line="146" selection-end-column="42" />
         </state>
       </provider>
     </entry>
