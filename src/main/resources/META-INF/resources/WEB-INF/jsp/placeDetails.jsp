@@ -12,6 +12,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
     <title>HistoryGO</title>
     <link rel="stylesheet" href="/resources/css/style.css">
 </head>
@@ -20,7 +22,14 @@
 <body style="background-color: aliceblue">
 
 
-    <div class="jumbotron text-center">  <h1 class="display-1">  Place details </h1>
+    <div class="jumbotron text-center">
+
+        <button type="button" onclick="location.href = '/listPlaces'; method='post';"  class="btn rounded-circle">
+            <i class="fas fa-arrow-circle-left fa-7x"></i>
+        </button>
+
+
+        <h1 class="display-1">  Place details </h1>
     </div>
 
 

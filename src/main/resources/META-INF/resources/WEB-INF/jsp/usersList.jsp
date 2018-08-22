@@ -29,10 +29,9 @@
 <body style="background-color: aliceblue">
 
 <div class="jumbotron">
-    <button type="button" onclick="location.href = '/';" class="btn-primary rounded-circle">
 
+    <button type="button" onclick="location.href = '/';" class="btn rounded-circle">
         <i class="fas fa-arrow-circle-left fa-7x"></i>
-
     </button>
 
      <h1 class="display-1 text-center"> Users </h1>
@@ -40,7 +39,6 @@
 
 
 <div class="container-fluid">
-
 
     <div class="row">
         <div class="col-sm-2"></div>
