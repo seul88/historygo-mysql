@@ -280,6 +280,74 @@
 
 
 
+
+
+<div class="container-fluid container-padding-big color-2">
+    <div id="accordion-add-place">
+        <div class="card color-2">
+            <div class="card-header color-2">
+                <a class="card-link color-2" data-toggle="collapse" href="#collapse-add-place">
+                    <div class="text-center"><h2>Add place to database</h2></div>
+                </a>
+            </div>
+            <div id="collapse-add-place" class="collapse" data-parent="#accordion-add-place">
+                <div class="card-body">
+
+                    <div class="container color-2">
+                        <form class="form-horizontal" method="post" action="/addPlaceWithDetails">
+
+                            <div class="form-group">
+                                <label class="control-label col-sm-2" for="name"><b>Name:</b></label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" placeholder="Enter name" name="name">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="description">Description:</label>
+                                <textarea class="form-control" rows="5" id="description" name="description"></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label col-sm-2" for="year"><b>Year:</b></label>
+                                <div class="col-sm-10">
+                                    <input type="number" class="form-control" id="year" placeholder="Enter year" name="year">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label col-sm-2" for="GPS_E"><b>GPS_E:</b></label>
+                                <div class="col-sm-10">
+                                    <input type="number" step="0.0000001" class="form-control" id="GPS_E" placeholder="Enter GPS E" name="GPS_E">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label col-sm-2" for="GPS_N"><b>GPS_N:</b></label>
+                                <div class="col-sm-10">
+                                    <input type="number" step="0.0000001" class="form-control" id="GPS_N" placeholder="Enter GPS N" name="GPS_N">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-sm-offset-2 col-sm-10">
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
 <div class="container-fluid container-padding-big color-3 text-center">
     <form action="deletePlace" method="post" onsubmit="return validate('nameValuePlaceDelete')">
         <div class="row">

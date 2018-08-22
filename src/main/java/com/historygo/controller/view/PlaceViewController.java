@@ -68,6 +68,33 @@ public class PlaceViewController {
     }
 
 
+    @PostMapping("/addPlaceWithDetails")
+    public String addPlaceWithDetails (@RequestParam("name") String name,
+                                       @RequestParam("description") String description,
+                                       @RequestParam("year")  int year,
+                                       @RequestParam("GPS_N") double GPS_N,
+                                       @RequestParam("GPS_E") double GPS_E
+                                       ){
+        Places place = new Places();
+
+        place.setName(name);
+        place.setDescription(description);
+        place.setYear(year);
+        place.setGPS_E(GPS_E);
+        place.setGPS_N(GPS_N);
+
+        place.setPoints(0);
+        place.setRating(0);
+        place.setVisits(0);
+
+        if (place.getName() != null && place.getName() != "")
+            if (placeRepository.findByName(name) == null)
+                placeRepository.save(place);
+
+        return "redirect:/";
+    }
+
+
     @PostMapping("/addPlace")
     public String addPlace (@RequestParam("name") String name){
         Places place = new Places();
