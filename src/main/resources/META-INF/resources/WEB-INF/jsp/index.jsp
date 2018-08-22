@@ -266,20 +266,6 @@
 
 
 
-<div class="container-fluid container-padding-big color-2 text-center">
-    <form action="addPlace" method="post" onsubmit="return validate('nameValuePlaceAdd')">
-        <div class="row">
-            <div class="col-sm-8"> <h3> <b> Add place to database </b> </h3> </div>
-            <div class="col-sm-2">
-                <input type="text" class="form-control" id="nameValuePlaceAdd" name="name" placeholder="Name">
-            </div>
-            <div class="col-sm-2"> <input type="submit" class="btn btn-warning" value="Add"> </div>
-        </div>
-    </form>
-</div>
-
-
-
 
 
 <div class="container-fluid container-padding-big color-2">
@@ -299,33 +285,41 @@
                             <div class="form-group">
                                 <label class="control-label col-sm-2" for="name"><b>Name:</b></label>
                                 <div class="col-sm-10">
-                                    <input type="text" class="form-control" placeholder="Enter name" name="name">
+                                    <input type="text" class="form-control" placeholder="Enter name" name="name" required >
                                 </div>
                             </div>
 
                             <div class="form-group">
                                 <label for="description">Description:</label>
-                                <textarea class="form-control" rows="5" id="description" name="description"></textarea>
+                                <textarea class="form-control" rows="5" id="description" name="description" required ></textarea>
                             </div>
 
                             <div class="form-group">
                                 <label class="control-label col-sm-2" for="year"><b>Year:</b></label>
                                 <div class="col-sm-10">
-                                    <input type="number" class="form-control" id="year" placeholder="Enter year" name="year">
+                                    <input type="number" class="form-control" id="year" placeholder="Enter year" name="year" required >
                                 </div>
                             </div>
 
                             <div class="form-group">
+                                <label class="control-label col-sm-2" for="points"><b>Points:</b></label>
+                                <div class="col-sm-10">
+                                    <input type="number" class="form-control" id="points" placeholder="Enter points" name="points" required >
+                                </div>
+                            </div>
+
+
+                            <div class="form-group">
                                 <label class="control-label col-sm-2" for="GPS_E"><b>GPS_E:</b></label>
                                 <div class="col-sm-10">
-                                    <input type="number" step="0.0000001" class="form-control" id="GPS_E" placeholder="Enter GPS E" name="GPS_E">
+                                    <input type="number" step="0.0000001" class="form-control" id="GPS_E" placeholder="Enter GPS E" name="GPS_E" required >
                                 </div>
                             </div>
 
                             <div class="form-group">
                                 <label class="control-label col-sm-2" for="GPS_N"><b>GPS_N:</b></label>
                                 <div class="col-sm-10">
-                                    <input type="number" step="0.0000001" class="form-control" id="GPS_N" placeholder="Enter GPS N" name="GPS_N">
+                                    <input type="number" step="0.0000001" class="form-control" id="GPS_N" placeholder="Enter GPS N" name="GPS_N" required >
                                 </div>
                             </div>
 
