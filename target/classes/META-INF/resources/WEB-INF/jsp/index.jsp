@@ -136,16 +136,16 @@
 
     <div class="container-fluid container-padding-big color-3">
         <div id="accordion-add-user">
-            <div class="card color-3">
-                <div class="card-header">
-                    <a class="card-link" data-toggle="collapse" href="#collapse-add-user">
+            <div class="card color-2">
+                <div class="card-header color-2">
+                    <a class="card-link color-2" data-toggle="collapse" href="#collapse-add-user">
                         <div class="text-center"><h2>Add user to database</h2></div>
                     </a>
                 </div>
-                <div id="collapse-add-user" class="collapse show" data-parent="#accordion-add-user">
+                <div id="collapse-add-user" class="collapse" data-parent="#accordion-add-user">
                     <div class="card-body">
 
-                        <div class="container color-3">
+                        <div class="container color-2">
                             <form class="form-horizontal" method="post" action="/addUserWithDetails">
 
                                 <div class="form-group">
@@ -198,7 +198,7 @@
 <div class="container-fluid container-padding-big color-2 text-center">
     <form action="delete" method="post" onsubmit="return validate('nameValueDelete')">
         <div class="row">
-            <div class="col-sm-8"> <div class="text-danger">  <h4> Delete user from base </h4>  </div></div>
+            <div class="col-sm-8"> <div class="color-2">  <h4> Delete user from base </h4>  </div></div>
             <div class="col-sm-2"> <input name="name"  id="nameValueDelete" type="text" class="form-control" placeholder="Nickname" > </div>
             <div class="col-sm-2">  <input type="submit" class="btn btn-danger" value="Delete"> </div>
         </div>
@@ -239,7 +239,7 @@
 <div class="container-fluid  container-padding-big color-2 text-center">
     <form action="placeDetails" method="post" onsubmit="return validate('nameValuePlaceSearch')">
         <div class="row">
-            <div class="col-sm-8"><h4> Search for place details</h4></div>
+            <div class="col-sm-8"><h3><b>Search for place details</b></h3></div>
             <div class="col-sm-2">
                 <div class="form-group">
                     <input type="text" class="form-control"  id="nameValuePlaceSearch" name="name" placeholder="Name">
@@ -259,7 +259,7 @@
 <div class="container-fluid container-padding-big color-3 text-center">
     <form action="listPlaces" method="post" >
         <div class="row">
-            <div class="col-sm-8"> <h4> List all places </h4> </div>
+            <div class="col-sm-8"> <h3> <b>List all places</b> </h3> </div>
             <div class="col-sm-4 float-left"> <input type="submit" class="btn btn-info" value="Find all"></div>
         </div>
     </form>
@@ -270,7 +270,7 @@
 <div class="container-fluid container-padding-big color-2 text-center">
     <form action="addPlace" method="post" onsubmit="return validate('nameValuePlaceAdd')">
         <div class="row">
-            <div class="col-sm-8"> <h4> Add place to database </h4> </div>
+            <div class="col-sm-8"> <h3> <b> Add place to database </b> </h3> </div>
             <div class="col-sm-2">
                 <input type="text" class="form-control" id="nameValuePlaceAdd" name="name" placeholder="Name">
             </div>
@@ -284,7 +284,7 @@
 <div class="container-fluid container-padding-big color-3 text-center">
     <form action="deletePlace" method="post" onsubmit="return validate('nameValuePlaceDelete')">
         <div class="row">
-            <div class="col-sm-8"> <div class="text-danger"> <h4>  <b> Delete place from database </b> </h4>   </div> </div>
+            <div class="col-sm-8">  <h3>  <b> Delete place from database </b> </h3> </div>
             <div class="col-sm-2"> <input name="name"  id="nameValuePlaceDelete" type="text" class="form-control" placeholder="Name" > </div>
             <div class="col-sm-2">  <input type="submit" class="btn btn-danger" value="Delete"> </div>
         </div>

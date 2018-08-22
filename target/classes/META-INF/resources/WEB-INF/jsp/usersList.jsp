@@ -29,12 +29,13 @@
 <body style="background-color: aliceblue">
 
 <div class="jumbotron">
+    <div class="row">
+        <button type="button" onclick="location.href = '/';" class="btn rounded-circle">
+            <i class="fas fa-arrow-circle-left fa-7x"></i>
+        </button>
 
-    <button type="button" onclick="location.href = '/';" class="btn rounded-circle">
-        <i class="fas fa-arrow-circle-left fa-7x"></i>
-    </button>
-
-     <h1 class="display-1 text-center"> Users </h1>
+         <h1 class="display-1 text-center" style="margin-left:38px;"> Users </h1>
+    </div>
 </div>
 
 

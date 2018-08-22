@@ -22,14 +22,15 @@
 <body style="background-color: aliceblue">
 
 
-    <div class="jumbotron text-center">
+    <div class="jumbotron">
+        <div class="row">
+        <form action="listPlaces" method="post">
+            <button type="submit" class="btn rounded-circle" > <i class="fas fa-arrow-circle-left fa-7x"></i></button>
+        </form>
 
-        <button type="button" onclick="location.href = '/listPlaces'; method='post';"  class="btn rounded-circle">
-            <i class="fas fa-arrow-circle-left fa-7x"></i>
-        </button>
 
-
-        <h1 class="display-1">  Place details </h1>
+        <h1 class="display-1 text-center" style="margin-left:38px;">  Place details </h1>
+        </div>
     </div>
 
 

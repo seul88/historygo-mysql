@@ -30,12 +30,13 @@
 
 <div class="jumbotron">
 
-    <button type="button" onclick="location.href = '/';" class="btn rounded-circle">
-        <i class="fas fa-arrow-circle-left fa-7x"></i>
-    </button>
+    <div class="row">
+        <button type="button" onclick="location.href = '/';" class="btn rounded-circle">
+            <i class="fas fa-arrow-circle-left fa-7x"></i>
+        </button>
 
-    <h1 class="display-1 text-center" > Places </h1>
-
+        <h1 class="display-1 text-center" style="margin-left: 38px; " > Places </h1>
+    </div>
 </div>
 
 
