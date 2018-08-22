@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -59,7 +60,7 @@ public class UserViewController {
         if (user != null) {
             userRepository.delete(user);
         }
-        return "redirect:/";
+        return "redirect:/listUsers";
     }
 
 
@@ -75,6 +76,30 @@ public class UserViewController {
         return "redirect:/";
     }
 
+    @PostMapping("/addUserWithDetails")
+    public String addUserWithDetails(@RequestParam("name") String name, @RequestParam("email") String email, @RequestParam("country") String country){
+        Users user = new Users();
+        user.setName(name);
+        user.setEmail(email);
+        user.setCountry(country);
+        user.setPoints(0);
+
+        if (user.getName() != null && user.getName() != "")
+            if (userRepository.findByName(name) == null)
+                userRepository.save(user);
+
+        return "redirect:/";
+    }
+
+
+    @GetMapping("/listUsers")
+    public String listUsersGet(ModelMap model){
+        ArrayList<Users> users = new ArrayList<>();
+        users = (ArrayList<Users>) userRepository.findAll();
+        model.addAttribute("users", users);
+
+        return "usersList";
+    }
 
     @PostMapping("/listUsers")
     public String listUsers(ModelMap model){

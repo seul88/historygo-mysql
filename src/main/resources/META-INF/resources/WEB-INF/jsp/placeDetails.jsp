@@ -34,7 +34,7 @@
                 <h1><small>Rating:</small>  <c:out value="${rating}"/></h1>
                 <h1><small>Year:</small> <c:out value="${year}"/> </h1>
                 <h1><small>Visits:</small> <c:out value="${visits}"/> </h1>
-                <h1><small>Description:</small> <c:out value="${description}"/> </h1>
+                <h1><small>Description:</small></h1> <c:out value="${description}"/>
 
             </div>
 

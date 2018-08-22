@@ -114,7 +114,12 @@
 </div>
 
 
-<div class="container-fluid container-padding-big color-3 text-center">
+
+
+
+
+
+    <!--
     <form action="addUser" method="post" onsubmit="return validate('nameValueAdd')">
         <div class="row">
             <div class="col-sm-8"> <h4> Add user to database </h4> </div>
@@ -124,7 +129,68 @@
             <div class="col-sm-2"> <input type="submit" class="btn btn-warning" value="Add"> </div>
         </div>
     </form>
-</div>
+    -->
+
+
+    <div class="container-fluid container-padding-big color-3">
+        <div id="accordion-add-user">
+            <div class="card color-3">
+                <div class="card-header">
+                    <a class="card-link" data-toggle="collapse" href="#collapse-add-user">
+                        <div class="text-center"><h2>Add user to database</h2></div>
+                    </a>
+                </div>
+                <div id="collapse-add-user" class="collapse show" data-parent="#accordion-add-user">
+                    <div class="card-body">
+
+                        <div class="container color-3">
+                            <form class="form-horizontal" method="post" action="/addUserWithDetails">
+
+                                <div class="form-group">
+                                    <label class="control-label col-sm-2" for="name">Nickname:</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="name" placeholder="Enter Nickname" name="name">
+                                    </div>
+                                </div>
+
+
+                                <div class="form-group">
+                                    <label class="control-label col-sm-2" for="email">Email:</label>
+                                    <div class="col-sm-10">
+                                        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="control-label col-sm-2" for="country">Country:</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="country" placeholder="Enter country" name="country">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="col-sm-offset-2 col-sm-10">
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
 
 
 <div class="container-fluid container-padding-big color-2 text-center">
@@ -139,7 +205,6 @@
 
 
 <div class="container">
-
     <div class="modal fade" id="myModal" role="dialog">
         <div class="modal-dialog">
 
@@ -154,11 +219,12 @@
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                 </div>
             </div>
-
         </div>
     </div>
-
 </div>
+
+
+
 
 
 <div class="container-fluid container-padding-small color-4 text-center">
