@@ -17,4 +17,5 @@ public interface UserRepository extends JpaRepository<Users, Integer> {
     List<Users> findByCountry(String country);
 
     List<Users> findByEmail(String email);
+    
 }

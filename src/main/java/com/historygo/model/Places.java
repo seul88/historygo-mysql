@@ -2,6 +2,8 @@ package com.historygo.model;
 
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name="places")
@@ -18,6 +20,32 @@ public class Places {
     private int visits;
     private double GPS_N;
     private double GPS_E;
+
+
+    @ManyToMany
+    @JoinTable(name = "places_users",
+                joinColumns =  { @JoinColumn(name = "fk_place")  },
+                inverseJoinColumns = { @JoinColumn(name="fk_user")})
+    private List<Users> users = new ArrayList<Users>();
+
+
+    public void addUser(Users user){
+        this.users.add(user);
+        user.getPlaces().add(this);
+    }
+
+    public void removeUser(Users user){
+        this.users.remove(user);
+        user.getPlaces().remove(user);
+    }
+
+    public List<Users> getUsers() {
+        return users;
+    }
+
+    public void setUsers(List<Users> users) {
+        this.users = users;
+    }
 
 
     public Integer getId() {
