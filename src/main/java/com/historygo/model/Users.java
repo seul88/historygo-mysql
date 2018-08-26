@@ -55,6 +55,22 @@ public class Users {
 		return places;
 	}
 
+	public String getPlacesAsString() {
+		return places.toString();
+	}
+
+	public List<Places> getPlacesAsList() {
+
+		List<Places>  temp = new ArrayList<>();
+		for (Places place : this.getPlaces()){
+			temp.add(place);
+		}
+
+		return temp;
+	}
+
+	public Users(){}
+
 	public void setPlaces(Set<Places> places) {
 		this.places = places;
 	}

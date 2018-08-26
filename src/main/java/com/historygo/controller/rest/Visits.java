@@ -8,6 +8,9 @@ import com.historygo.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+import java.util.Set;
+
 @RestController
 @RequestMapping(path="/visits")
 public class Visits {
@@ -73,6 +76,23 @@ public class Visits {
         userRepository.save(tempUsr);
 
         return "Done";
+
+    }
+
+/*
+    @GetMapping(path="/places/user")
+    public String showPlacesForUser(@RequestParam String userName){
+
+        String places = this.userRepository.findByName(userName).getPlacesAsString();
+        return places;
+
+    }
+*/
+    @GetMapping(path="/places/user")
+    public List<Places> showPlacesForUserAsList(@RequestParam String userName){
+
+        List<Places> places = this.userRepository.findByName(userName).getPlacesAsList();
+        return places;
 
     }
 }

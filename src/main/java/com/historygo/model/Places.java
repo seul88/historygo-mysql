@@ -1,6 +1,8 @@
 package com.historygo.model;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 import java.util.*;
 
@@ -38,11 +40,12 @@ public class Places {
         user.getPlaces().remove(user);
     }
 
+    @JsonIgnore
     public Set<Users> getUsers() {
         return users;
     }
 
-
+    public Places(){}
 
     @Override
     public boolean equals(Object o) {
