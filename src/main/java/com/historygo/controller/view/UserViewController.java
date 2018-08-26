@@ -30,7 +30,7 @@ public class UserViewController {
     }
 
 
-    @PostMapping("/userDetails")
+    @RequestMapping("/userDetails")
     public String showUserDetails(@RequestParam("name") String name, Model model) {
         Users user;
 
@@ -51,6 +51,7 @@ public class UserViewController {
 
         return "userDetails";
     }
+
 
 
     @PostMapping("/delete")

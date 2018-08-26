@@ -16,10 +16,26 @@
 
     <title>HistoryGO</title>
     <link rel="stylesheet" href="/resources/css/style.css">
+
+
+    <style>
+
+        #map {
+            height: 100%;
+            width: 50%;
+        }
+
+
+
+
+    </style>
+
+
 </head>
 
 
 <body style="background-color: aliceblue">
+
 
 
     <div class="jumbotron">
@@ -28,16 +44,69 @@
             <button type="submit" class="btn rounded-circle" > <i class="fas fa-arrow-circle-left fa-7x"></i></button>
         </form>
 
-
         <h1 class="display-1 text-center" style="margin-left:38px;">  Place details </h1>
         </div>
     </div>
 
 
+    <script>
+
+
+
+        var map;
+        var gps_n = parseFloat(${GPS_N});
+        var gps_e = parseFloat(${GPS_E});
+        var name = ${name};
+
+        function initMap() {
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: {lat: 52.3992649, lng: 16.9374071},
+                zoom: 12
+            });
+
+            var placeLocation = { lat: gps_n, lng: gps_e };
+
+            var marker = new google.maps.Marker({
+                position: placeLocation,
+                map: map,
+                title: name
+            });
+
+            var content = "<h2><b>${name}</b></h2>"
+
+            var infowindow = new google.maps.InfoWindow({
+                content: content,
+                maxWidth: 200
+            });
+
+            infowindow.open(map, marker);
+            
+            marker.addListener('click', function() {
+                infowindow.open(map, marker);
+            });
+
+
+        }
+
+
+
+
+
+
+    </script>
+
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCR4AOEzhHK2YEKLqWrvui8GwG19uPp0-8&callback=initMap">
+    </script>
+
+
+
+
     <div class="container-fluid">
 
         <div class="row">
-            <div class="col-sm-4">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-3">
                 <h1 class="display-1"><c:out value="${name}"/></h1>
 
                 <h1><small>Points:</small> <c:out value="${points}"/></h1>
@@ -49,8 +118,15 @@
             </div>
 
 
+            <div class="col-sm-8">  <div id="map"></div>  </div>
 
         </div>
-    </div>
+
+
+
+        </div>
+
+
+
 </body>
 </html>

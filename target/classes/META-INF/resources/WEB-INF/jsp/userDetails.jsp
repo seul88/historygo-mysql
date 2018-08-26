@@ -23,7 +23,7 @@
 <div class="jumbotron">
 
     <div class="row">
-        <button type="button" onclick="location.href = '/listUsers';" class="btn rounded-circle">
+        <button type="button" onclick="location.href = document.referrer; return false;" class="btn rounded-circle">
             <i class="fas fa-arrow-circle-left fa-7x"></i>
         </button>
 
@@ -35,6 +35,7 @@
 <div class="container-fluid">
 
     <div class="row">
+        <div class="col-sm-1"></div>
         <div class="col-sm-4">
             <h1 class="display-1"><c:out value="${name}"/></h1>
 
@@ -46,24 +47,49 @@
         </div>
 
 
-        <!--
-        <div class="col-sm-8">
-            <h1 class="display-3"> Lista odwiedzonych miejsc </h1>
+
+        <div class="col-sm-5">
+            <h1 class="display-3"> List of visited places </h1>
 
 
 
-            <c:forEach items="${places}" var="place">
 
-                Name: <c:out value="${place.name}"/></br></br>
-                Description: <c:out value="${place.description}"/></br></br>
-                Points: <c:out value="${place.points}"/></br></br><hr></br>
-            </c:forEach>
+
+            <div class="row">
+
+                    <table class="table table-bordered table-striped ">
+                        <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Points</th>
+                            <th>Options</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <c:forEach items="${places}" var="site">
+
+                            <tr>
+                                <td> <b> <c:out value="${site.name}" />  </b> </td>
+                                <td>  <c:out value="${site.points}"/> </td>
+                                <td>
+                                    <form action="placeDetails" method="post">
+                                        <input type = "hidden" name="name" value="${site.name}"> <input type="submit" class="btn btn-success m-1 pl-5 pr-5" value="Show details">
+                                    </form>
+                                </td>
+                            </tr>
+
+                        </c:forEach>
+                        </tbody>
+                    </table>
+
+
 
         </div>
-         -->
+
 
 
     </div>
+        <div class="col-sm-2"></div>
 </div>
 </body>
 </html>

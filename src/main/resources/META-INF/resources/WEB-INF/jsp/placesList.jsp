@@ -51,7 +51,8 @@
                 <tr>
                     <th>Name</th>
                     <th>Points</th>
-                    <th>Options</th>
+                    <th>Get more information about this place</th>
+                    <th>Delete this place from the database</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -64,7 +65,8 @@
                             <form action="placeDetails" method="post">
                                 <input type = "hidden" name="name" value="${site.name}"> <input type="submit" class="btn btn-success m-1 pl-5 pr-5" value="Show details">
                             </form>
-
+                        </td>
+                        <td>
                             <form action="delete" method="post">
                                 <input type = "hidden" name="name" value="${site.name}"> <input type="submit" class="btn btn-danger m-1 pl-5 pr-5" value="DELETE">
                             </form>
