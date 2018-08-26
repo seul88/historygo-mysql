@@ -60,7 +60,17 @@ public class Places {
         return Objects.hash(name);
     }
 
+/*
+    public List<Users> getUsersAsList() {
 
+        List<Users>  temp = new ArrayList<>();
+        for (Users user : this.getUsers()){
+            temp.add(user);
+        }
+
+        return temp;
+    }
+*/
 
     public void setUsers(Set<Users> users) {
         this.users = users;

@@ -1,5 +1,7 @@
 package com.historygo.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 import java.util.*;
 
@@ -54,11 +56,7 @@ public class Users {
 	public Set<Places> getPlaces() {
 		return places;
 	}
-
-	public String getPlacesAsString() {
-		return places.toString();
-	}
-
+	
 	public List<Places> getPlacesAsList() {
 
 		List<Places>  temp = new ArrayList<>();

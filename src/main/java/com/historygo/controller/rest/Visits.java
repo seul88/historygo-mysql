@@ -8,6 +8,7 @@ import com.historygo.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
@@ -95,4 +96,28 @@ public class Visits {
         return places;
 
     }
+
+    @GetMapping(path="/users/place")
+    public List<Users> showUsersForPlacesAsList(@RequestParam String placeName) {
+        List<Users> users = this.userRepository.findAll();
+        List<Users> result = new ArrayList<>();
+
+        for (Users temp : users){
+            for (Places tempPlace : temp.getPlaces()){
+                if (tempPlace.getName().equals(placeName))
+                    result.add(temp);
+            }
+        }
+
+        return result;
+
+    }
+
+    /*
+    @GetMapping(path="/users/place")
+    public List<Users> showUsersForPlacesAsList(@RequestParam String placeName) {
+        List<Users> users = this.placeRepository.findByName(placeName).getUsersAsList();
+        return users;
+    }
+    */
 }
