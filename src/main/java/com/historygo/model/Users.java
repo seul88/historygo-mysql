@@ -1,8 +1,7 @@
 package com.historygo.model;
 
 import javax.persistence.*;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 @Entity
 @Table(name = "users")
@@ -21,7 +20,7 @@ public class Users {
     private int points;
 
 	@ManyToMany
-    private List<Places> places = new ArrayList<Places>();
+    private Set<Places> places = new HashSet<>();
 
 
 
@@ -36,11 +35,27 @@ public class Users {
 	}
 
 
-	public List<Places> getPlaces() {
+
+
+	@Override
+	public boolean equals(Object o) {
+		if (this == o) return true;
+		if (o == null || getClass() != o.getClass()) return false;
+		Users user= (Users) o;
+		return Objects.equals(name, user.name);
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(name);
+	}
+
+
+	public Set<Places> getPlaces() {
 		return places;
 	}
 
-	public void setPlaces(List<Places> places) {
+	public void setPlaces(Set<Places> places) {
 		this.places = places;
 	}
 
