@@ -92,7 +92,7 @@ public class Visits {
     @GetMapping(path="/places/user")
     public List<Places> showPlacesForUserAsList(@RequestParam String userName){
 
-        List<Places> places = this.userRepository.findByName(userName).getPlacesAsList();
+        List<Places> places = (List<Places>) this.userRepository.findByName(userName).getPlaces();
         return places;
 
     }

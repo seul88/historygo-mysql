@@ -46,21 +46,21 @@
         </div>
 
 
-        <!--
+
         <div class="col-sm-8">
-            <h1 class="display-3"> Lista odwiedzonych miejsc </h1>
+            <h1 class="display-3"> List of visited places </h1>
 
 
 
             <c:forEach items="${places}" var="place">
 
-                Name: <c:out value="${place.name}"/></br></br>
-                Description: <c:out value="${place.description}"/></br></br>
-                Points: <c:out value="${place.points}"/></br></br><hr></br>
+                Name: <c:out value="${place.name}"/></br>
+                Description: <c:out value="${place.description}"/></br>
+                Points: <c:out value="${place.points}"/></br></br><hr>
             </c:forEach>
 
         </div>
-         -->
+
 
 
     </div>

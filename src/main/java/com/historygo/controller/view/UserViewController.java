@@ -41,6 +41,7 @@ public class UserViewController {
             model.addAttribute("id", user.getId());
             model.addAttribute("email", user.getEmail());
             model.addAttribute("country", user.getCountry());
+            model.addAttribute("places", user.getPlaces());
         }
         catch (NullPointerException ex){
             model.addAttribute("errorMessage", "Player not found!");

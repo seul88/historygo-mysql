@@ -56,7 +56,8 @@ public class Users {
 	public Set<Places> getPlaces() {
 		return places;
 	}
-	
+
+	/*
 	public List<Places> getPlacesAsList() {
 
 		List<Places>  temp = new ArrayList<>();
@@ -66,7 +67,7 @@ public class Users {
 
 		return temp;
 	}
-
+*/
 	public Users(){}
 
 	public void setPlaces(Set<Places> places) {
