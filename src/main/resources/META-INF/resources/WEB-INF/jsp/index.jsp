@@ -1,10 +1,10 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-2" pageEncoding="ISO-8859-2"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
 
 
-    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-2">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Static content -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
@@ -291,7 +291,7 @@
 
                             <div class="form-group">
                                 <label for="description">Description:</label>
-                                <textarea class="form-control" rows="5" id="description" name="description" required ></textarea>
+                                <textarea class="form-control" rows="10" id="description" name="description" required ></textarea>
                             </div>
 
                             <div class="form-group">

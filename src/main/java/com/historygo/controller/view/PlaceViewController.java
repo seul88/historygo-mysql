@@ -73,7 +73,8 @@ public class PlaceViewController {
                                        @RequestParam("year")  int year,
                                        @RequestParam("points")  int points,
                                        @RequestParam("GPS_N") double GPS_N,
-                                       @RequestParam("GPS_E") double GPS_E
+                                       @RequestParam("GPS_E") double GPS_E,
+                                       Model model
                                        )
     {
         Places place = new Places();
@@ -91,7 +92,13 @@ public class PlaceViewController {
 
             if (place.getName() != null && place.getName() != "")
                 if (placeRepository.findByName(name) == null)
+                    try {
                         placeRepository.save(place);
+                    }
+                    catch (Exception e){
+                          model.addAttribute("errorMessage","Error while inserting to database. Invalid data.");
+                        return "errorMsg";
+                    }
 
         return "redirect:/";
     }

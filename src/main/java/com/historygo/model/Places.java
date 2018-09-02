@@ -14,6 +14,7 @@ public class Places {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
     private String name;
+  //  @Column(length = 65535,columnDefinition="Text")
     private String description;
     private int points;
     private double rating;

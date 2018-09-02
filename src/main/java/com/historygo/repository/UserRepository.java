@@ -4,6 +4,7 @@ import com.historygo.model.Users;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.repository.query.Param;
 import java.util.List;
+import java.util.Set;
 
 
 public interface UserRepository extends JpaRepository<Users, Integer> {
@@ -17,5 +18,5 @@ public interface UserRepository extends JpaRepository<Users, Integer> {
     List<Users> findByCountry(String country);
 
     List<Users> findByEmail(String email);
-    
+
 }

@@ -1,11 +1,11 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-2" pageEncoding="ISO-8859-2"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <!DOCTYPE html>
 <html>
 <head>
 
-    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-2">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Static content -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
@@ -51,7 +51,8 @@
                 <tr>
                     <th>Name</th>
                     <th>Points</th>
-                    <th>Options</th>
+                    <th>Get more information about this place</th>
+                    <th>Delete this place from the database</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -64,8 +65,9 @@
                             <form action="placeDetails" method="post">
                                 <input type = "hidden" name="name" value="${site.name}"> <input type="submit" class="btn btn-success m-1 pl-5 pr-5" value="Show details">
                             </form>
-
-                            <form action="delete" method="post">
+                        </td>
+                        <td>
+                            <form action="deletePlace" method="post">
                                 <input type = "hidden" name="name" value="${site.name}"> <input type="submit" class="btn btn-danger m-1 pl-5 pr-5" value="DELETE">
                             </form>
                         </td>

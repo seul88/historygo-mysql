@@ -32,7 +32,7 @@
 
 <div class="container">
     <!-- Modal -->
-    <div class="modal fade" id="errorModal" role="dialog">
+    <div class="modal fade" id="errorModal" role="dialog" data-backdrop="static" data-keyboard="false">
         <div class="modal-dialog">
 
             <!-- Modal content-->
@@ -42,9 +42,6 @@
                 </div>
                 <div class="modal-body">
                     <a href="/">Redirect to mainpage.</a>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                 </div>
             </div>
 

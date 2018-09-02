@@ -57,6 +57,8 @@ public class Users {
 		return places;
 	}
 
+
+
 	/*
 	public List<Places> getPlacesAsList() {
 

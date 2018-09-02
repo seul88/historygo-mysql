@@ -89,6 +89,7 @@ public class Visits {
 
     }
 */
+/*
     @GetMapping(path="/places/user")
     public List<Places> showPlacesForUserAsList(@RequestParam String userName){
 
@@ -96,9 +97,18 @@ public class Visits {
         return places;
 
     }
+*/
+
+    @GetMapping(path="/places/user")
+    public Set<Places> showPlacesForUser(@RequestParam String userName){
+
+        Set<Places> places =  this.userRepository.findByName(userName).getPlaces();
+        return places;
+
+    }
 
     @GetMapping(path="/users/place")
-    public List<Users> showUsersForPlacesAsList(@RequestParam String placeName) {
+    public List<Users> showUsersForPlaces(@RequestParam String placeName) {
         List<Users> users = this.userRepository.findAll();
         List<Users> result = new ArrayList<>();
 
