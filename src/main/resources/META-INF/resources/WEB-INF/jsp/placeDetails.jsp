@@ -58,7 +58,7 @@
         var map;
         var gps_n = parseFloat(${GPS_N});
         var gps_e = parseFloat(${GPS_E});
-        var name = ${name};
+        var name = ${'name'};
 
         function initMap() {
             map = new google.maps.Map(document.getElementById('map'), {
@@ -104,7 +104,7 @@
 
 
 
-    <div class="container-fluid">
+    <div class="container-fluid pb-2 mb-2">
 
         <div class="row">
             <div class="col-sm-1"></div>
