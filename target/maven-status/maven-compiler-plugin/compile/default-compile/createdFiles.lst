@@ -1,10 +1,10 @@
-com\historygo\controller\rest\UserController.class
-com\historygo\controller\view\UserViewController.class
-com\historygo\repository\PlaceRepository.class
 com\historygo\controller\view\PlaceViewController.class
 com\historygo\controller\rest\PlaceController.class
 com\historygo\controller\rest\Visits.class
-com\historygo\model\Places.class
 com\historygo\Application.class
+com\historygo\controller\rest\UserController.class
+com\historygo\controller\view\UserViewController.class
+com\historygo\repository\PlaceRepository.class
+com\historygo\model\Places.class
 com\historygo\model\Users.class
 com\historygo\repository\UserRepository.class

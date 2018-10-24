@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="gs-mysql-data:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="gs-mysql-data.war">
+      <element id="artifact" artifact-name="gs-mysql-data:war exploded" />
+    </root>
+  </artifact>
+</component>
