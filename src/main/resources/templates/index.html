@@ -134,7 +134,7 @@
                         <div class="card-body">
 
                             <div class="container color-2">
-                                <form class="form-horizontal" method="post" action="/addUserWithDetails">
+                                <form class="form-horizontal" method="post" action="/admin/addUserWithDetails">
 
                                     <div class="form-group">
                                         <label class="control-label col-sm-2" for="name"><b>Nickname:</b></label>
@@ -177,7 +177,7 @@
 
 
         <div class="container-fluid container-padding-big color-3 text-center">
-            <form action="listUsers" method="post" >
+            <form action="/admin/listUsers" method="post" >
                 <div class="row">
                     <div class="col-sm-8"> <h3> <b>List all users</b> </h3> </div>
                     <div class="col-sm-4 float-left"> <input type="submit" class="btn btn-info" value="Find all"></div>
@@ -191,7 +191,7 @@
 
 
         <div class="container-fluid container-padding-big color-2 text-center">
-            <form action="delete" method="post" onsubmit="return validate('nameValueDelete')">
+            <form action="/admin/delete" method="post" onsubmit="return validate('nameValueDelete')">
                 <div class="row">
                     <div class="col-sm-8"> <div class="color-2">  <h3> <b>Delete user from base</b> </h3>  </div></div>
                     <div class="col-sm-2"> <input name="name"  id="nameValueDelete" type="text" class="form-control" placeholder="Nickname" > </div>
@@ -232,7 +232,7 @@
 
 
         <div class="container-fluid  container-padding-big color-2 text-center">
-            <form action="placeDetails" method="post" onsubmit="return validate('nameValuePlaceSearch')">
+            <form action="/admin/placeDetails" method="post" onsubmit="return validate('nameValuePlaceSearch')">
                 <div class="row">
                     <div class="col-sm-8"><h3><b>Search for place details</b></h3></div>
                     <div class="col-sm-2">
@@ -252,7 +252,7 @@
 
 
         <div class="container-fluid container-padding-big color-3 text-center">
-            <form action="listPlaces" method="post" >
+            <form action="/admin/listPlaces" method="post" >
                 <div class="row">
                     <div class="col-sm-8"> <h3> <b>List all places</b> </h3> </div>
                     <div class="col-sm-4 float-left"> <input type="submit" class="btn btn-info" value="Find all"></div>
@@ -276,7 +276,7 @@
                         <div class="card-body">
 
                             <div class="container color-2">
-                                <form class="form-horizontal" method="post" action="/addPlaceWithDetails">
+                                <form class="form-horizontal" method="post" action="/admin/addPlaceWithDetails">
 
                                     <div class="form-group">
                                         <label class="control-label col-sm-2" for="name"><b>Name:</b></label>
